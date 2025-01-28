@@ -46,12 +46,14 @@ would it be Ok, not found or what? how to konw that? by <b>status code</b>
 - There's a third party library called chai.js which contains easy-readable methods like (.to .be  .an .have)
 It is used by postman for writing assesrtions(checks)
 ---
-## Varialbes
+## Variables
 - In Postman and programming world, You tends to save time by making variables that has a common value to use it many times.
 - for instance => `{{baseUrl}}` a variable we use many times in all of requests of the collection.
 - Also, `APIKey` a variable we use many times for auth of the request.
-- 
-```javascript 
-let test="string";
-console.log(test);
-```
+- To access to variables of the collection from script section you will write
+  ```javascript
+  //post-request section
+  let myApiKey = pm.collectionVariables.get("apiKey"); //got a variable value
+  console.log(myApiKey);
+  ```
+
