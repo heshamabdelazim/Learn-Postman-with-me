@@ -67,8 +67,31 @@ It is used by postman for writing assesrtions(checks)
 ---
 ## Most of assertions(checks) of an API
 ```javascript
-pm.test("testing status code is 200?", ()=>{
-pm.response.to.have.status(200);
+pm.test("Is status code 200?", ()=>{
+  pm.response.to.have.status(200);
+});
+```
+```javascript
+let response;
+pm.test("Is response json?",()=>{
+    pm.response.to.be.json; // this is the test
+    response = pm.response.json();
+    console.log(response); //open console
 })
 ```
-
+```javascript
+let response;
+pm.test("Is response json?",()=>{
+    pm.response.to.be.json; // this is the test
+    response = pm.response.json();
+    console.log(response); //open console
+})
+```
+```javascript
+let response;
+pm.test("Is response json?",()=>{
+    pm.response.to.be.json; // this is the test
+    response = pm.response.json();
+    console.log(response); //open console
+})
+```
