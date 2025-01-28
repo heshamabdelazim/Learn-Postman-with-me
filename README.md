@@ -19,7 +19,7 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 ---
 ## Postman interface
 `
-![interface](post-images/postman interface.jpg)
+![interface](postman-images/postman interface.jpg)
 `
 
 1. You will find at the top `WorkSpace` you can (create your own) or (fork from others)  
