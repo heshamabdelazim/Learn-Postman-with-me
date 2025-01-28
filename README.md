@@ -69,6 +69,8 @@ It is used by postman for writing assesrtions(checks)
 ```javascript
 pm.test("Is status code 200?", ()=>{
   pm.response.to.have.status(200);
+  //OR..
+  pm.expect(pm.response.code).to.eql(200); //strict equal
 });
 ```
 ```javascript
@@ -76,7 +78,7 @@ let response;
 pm.test("Is response json?",()=>{
     pm.response.to.be.json; // this is the test
     response = pm.response.json();
-    console.log(response); //open console
+    console.log(response); //open console to see the value
 })
 ```
 ```javascript
@@ -89,9 +91,15 @@ pm.test("Is response json?",()=>{
 ```
 ```javascript
 let response;
-pm.test("Is response json?",()=>{
-    pm.response.to.be.json; // this is the test
-    response = pm.response.json();
-    console.log(response); //open console
+pm.test("Is it valid Product Price ",()=>{
+  pm.expect(variable.price).to.be.greaterThan(0.0);
+})
+```
+```javascript
+let response;
+pm.test("Is product available",()=>{
+  pm.expect(variable.isAvailable).to.be.true;
+  //OR..
+  pm.expect(variable.isAvailable).to.eql(true);
 })
 ```
