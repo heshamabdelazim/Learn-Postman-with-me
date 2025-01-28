@@ -14,6 +14,7 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 ## First: Postman definition as a tool
 - Software platform that simplifies the process of working with APIs, making it easier for developers to interact with them.
 - Used for building, testing, and documenting APIs.
+- It automates requests, validates responses, and compares them against expected results
 
 ---
 ## Postman interface
@@ -38,11 +39,18 @@ Secondly, you need to know after send to the server, What would the server say t
 would it be Ok, not found or what? how to konw that? by <b>status code</b>
 
 ---
-## General notes through the course
-- In the script section you need to know that postman used `javascript syntax`.
-- There's a third party library called chai.js which contains .to  .be  .an   .have
+## In the script section (for automation)
+- There are pre-request (before send) and post-request (after send)
+- the best practice of pre-request is to set variables before send or setting variables.
+- Postman uses `javascript syntax`.
+- There's a third party library called chai.js which contains easy-readable methods like (.to .be  .an .have)
 It is used by postman for writing assesrtions(checks)
-
+---
+## Varialbes
+- In Postman and programming world, You tends to save time by making variables that has a common value to use it many times.
+- for instance => `{{baseUrl}}` a variable we use many times in all of requests of the collection.
+- Also, `APIKey` a variable we use many times for auth of the request.
+- 
 ```javascript 
 let test="string";
 console.log(test);
