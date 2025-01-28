@@ -26,8 +26,12 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 2. Every Workspace has its own collections + Enviornments 
 3. A collection has (folders + requests) + some details like (variables + Auth + ...)
 4. A folder that inside a collection has (sub-folders + requests)
-5. A request contains all of API details that you need to `send` then watch the response and console of the script and most importnat thing is code status.
+5. A request contains all of API details that you need to `send` then watch the response and console of the script and most importnat thing is  the code status.
 
+---
+## API requests methods & Status codes
+It's important to know that whoever makes requests to the server, We call him a client made a request.
+So, In our situation here, Postman is a client to test our server
 ```javascript 
 let test="string";
 console.log(test);
