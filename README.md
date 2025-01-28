@@ -1,5 +1,5 @@
 # Learn-Postman-with-me.
-this is some main notes while my learning of Postman. <br/>
+This is some main notes while my learning of Postman. <br/>
 `Important notice:` If you want to learn, <br/>
 Visit the link
 <a href="https://www.youtube.com/watch?v=zp5Jh2FIpF0">Course here</a>.
