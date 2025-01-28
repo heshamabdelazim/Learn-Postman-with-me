@@ -27,3 +27,8 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 3. A collection has (folders + requests) + some details like (variables + Auth + ...)
 4. A folder that inside a collection has (sub-folders + requests)
 5. A request contains all of API details that you need to `send` then watch
+
+```javascript 
+let test="string";
+console.log(test);
+```
