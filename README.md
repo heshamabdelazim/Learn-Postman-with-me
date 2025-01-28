@@ -18,9 +18,9 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 
 ---
 ## Postman interface
-`
-![interface](postman-images/postman interface.jpg)
-`
+
+![interface](interface.jpg)
+
 
 1. You will find at the top `WorkSpace` you can (create your own) or (fork from others)  
 2. Every Workspace has its own collections + Enviornments 
