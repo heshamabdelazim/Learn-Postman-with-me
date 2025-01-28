@@ -58,9 +58,17 @@ It is used by postman for writing assesrtions(checks)
   ```
 - Also, In Postman we have random variable that sometimes used in the body of POST request
 ```javascript
+//Inside the body of post request
 {
 "clientName":"{{$randomFullName}}", // random variable that every time used will change
 "clientId": {{cId}} //collection variable
 }
-``` 
+```
+---
+## Most of assertions(checks) of an API
+```javascript
+pm.test("testing status code is 200?", ()=>{
+pm.response.to.have.status(200);
+})
+```
 
