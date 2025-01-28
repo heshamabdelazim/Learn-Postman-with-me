@@ -8,6 +8,7 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 - Postman definition as a tool.
 - Postman interface
 - API requests methods & Status codes
+- Structure of the API
 - Scripting
 - Some concepts
 
@@ -31,7 +32,7 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 ---
 ## API requests methods & Status codes
 It's important to know that whoever makes requests to the server, We call him a client made a request. <br/>
-So, In our situation here, Postman is a client to test our server. <br/>
+So, In our situation here, Postman is a client to test our server response along with our API.<br/>
 That does mean that client send to the server to do(to verb) something (GET data, POST data, DELETE data, PUT data, ...) <br/>
 
 Firstly, In this section you need to know the <b>http methods</b> which they are (GET, POST, DELETE, PUT,...)<br/>
