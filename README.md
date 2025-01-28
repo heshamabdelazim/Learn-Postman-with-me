@@ -32,8 +32,11 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 ## API requests methods & Status codes
 It's important to know that whoever makes requests to the server, We call him a client made a request. <br/>
 So, In our situation here, Postman is a client to test our server. <br/>
-that does mean that client send to the server to do something for him (GET data, POST data, DELETE data, PUT data, ...) <br/>
+That does mean that client send to the server to do(to verb) something (GET data, POST data, DELETE data, PUT data, ...) <br/>
 
+Firstly, In this section you need to know the <b>http methods</b> which they are (GET, POST, DELETE, PUT,...)<br/>
+Secondly, you need to know that what was the response from the server. Did he do what I've said to do or refused?<br/>
+how to konw that? by <b>status code</b>
 
 ```javascript 
 let test="string";
