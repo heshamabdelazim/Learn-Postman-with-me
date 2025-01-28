@@ -57,10 +57,10 @@ It is used by postman for writing assesrtions(checks)
   console.log(myApiKey);
   ```
 - Also, In Postman we have random variable that sometimes used in the body of POST request
-  ```json
+```json
 {
 "clientName":"{{$randomFullName}}", // random variable that every time used will change
 "clientId": {{cId}} //collection variable
 }
-  ``` 
+``` 
 
