@@ -31,7 +31,10 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 ---
 ## API requests methods & Status codes
 It's important to know that whoever makes requests to the server, We call him a client made a request. <br/>
-So, In our situation here, Postman is a client to test our server
+So, In our situation here, Postman is a client to test our server. <br/>
+that does mean that client send to the server to do something for him (GET data, POST data, DELETE data, PUT data, ...) <br/>
+
+
 ```javascript 
 let test="string";
 console.log(test);
