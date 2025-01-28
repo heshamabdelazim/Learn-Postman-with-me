@@ -22,7 +22,7 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 ![interface](interface.jpg)
 
 
-1. You will find at the top `WorkSpace` you can (create your own) or (fork from others)  
+1. You will find at the top `WorkSpaces` you can (create your own) or (fork from others)  
 2. Every Workspace has its own collections + Enviornments 
 3. A collection has (folders + requests) + some details like (variables + Auth + ...)
 4. A folder that inside a collection has (sub-folders + requests)
@@ -30,7 +30,7 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 
 ---
 ## API requests methods & Status codes
-It's important to know that whoever makes requests to the server, We call him a client made a request.
+It's important to know that whoever makes requests to the server, We call him a client made a request. <br/>
 So, In our situation here, Postman is a client to test our server
 ```javascript 
 let test="string";
