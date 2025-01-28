@@ -58,7 +58,7 @@ It is used by postman for writing assesrtions(checks)
   ```
 - Also, In Postman we have random variable that sometimes used in the body of POST request
 ```javascript
-//Inside the body of post request
+//Inside post request
 {
 "clientName":"{{$randomFullName}}", // random variable that every time used will change
 "clientId": {{cId}} //collection variable
@@ -101,5 +101,10 @@ pm.test("are products inside array? ",()=>{
   pm.expect(response.products).to.be.an("array", "Products aren't inside array"); //if err You will find=> Products aren't inside array
   pm.expect(response.products[0]).to.have.property("title");
   pm.expect(response.products[0].price).to.be.a("number", "it's not a number");
+})
+```
+```javascript
+pm.test("Is valid Egyptian ID?",()=>{
+  pm.expect(citizen.id).to.match(/^2[5-9]\d{12}/); //Egyption ID regular expression
 })
 ```
