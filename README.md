@@ -8,7 +8,9 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 - Postman definition as a tool.
 - Postman interface
 - API requests methods & Status codes
-- General notes through the course
+- In the script section (for automation)
+- Variables
+- Most of assertions(checks) of an API
 
 ---
 ## First: Postman definition as a tool
@@ -58,11 +60,16 @@ It is used by postman for writing assesrtions(checks)
   ```
 - Also, In Postman we have random variable that sometimes used in the body of POST request
 ```javascript
-//Inside post request
+//Inside POST request - Body
 {
 "clientName":"{{$randomFullName}}", // random variable that every time used will change
 "clientId": {{cId}} //collection variable
 }
+```
+```javascript
+//Inside POST request - script
+//To access random variable but different from last time
+console.log(pm.variables.replaceIn(${{randomFullName}})) // output is random name
 ```
 ---
 ## Most of assertions(checks) of an API
@@ -105,6 +112,11 @@ pm.test("are products inside array? ",()=>{
 ```
 ```javascript
 pm.test("Is valid Egyptian ID?",()=>{
-  pm.expect(citizen.id).to.match(/^2[5-9]\d{12}/); //Egyption ID regular expression
+  pm.expect(citizen.id).to.match(/^2[5-9]\d{12}$/); //Egyption ID regular expression
+})
+```
+```javascript
+pm.test("In Headers, x-powered-by is Express",()=>{
+  pm.expect(pm.response.headers.get(x-powered-by)).to.eql("Express");
 })
 ```
