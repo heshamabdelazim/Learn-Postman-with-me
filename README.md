@@ -50,10 +50,17 @@ It is used by postman for writing assesrtions(checks)
 - In Postman and programming world, You tends to save time by making variables that has a common value to use it many times.
 - for instance => `{{baseUrl}}` a variable we use many times in all of requests of the collection.
 - Also, `APIKey` a variable we use many times for auth of the request.
-- To access to variables of the collection from script section you will write
+- To access to collection variables from script section you will write
   ```javascript
   //post-request section
-  let myApiKey = pm.collectionVariables.get("apiKey"); //got a variable value
+  let myApiKey = pm.collectionVariables.get("apiKey"); //got a collection variable value
   console.log(myApiKey);
   ```
+- Also, In Postman we have random variable that sometimes used in the body of POST request
+  ```json
+{
+"clientName":"{{$randomFullName}}", // random variable that every time used will change
+"clientId": {{cId}} //collection variable
+}
+  ``` 
 
