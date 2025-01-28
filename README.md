@@ -1,8 +1,8 @@
 # Learn-Postman-with-me.
 this is some main notes while my learning of Postman. <br/>
-`Important notice:` You must try by yourself if you want to learn. <br/>
-visit the link of learning here ``.
-<a href="https://www.youtube.com/watch?v=zp5Jh2FIpF0">Course here</a>
+`Important notice:` If you want to learn, <br/>
+Visit the link
+<a href="https://www.youtube.com/watch?v=zp5Jh2FIpF0">Course here</a>.
 
 ---
 ## Content of this Repo is the following
