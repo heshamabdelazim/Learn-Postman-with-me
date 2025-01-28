@@ -8,9 +8,7 @@ the link of learning here `https://www.youtube.com/watch?v=zp5Jh2FIpF0`.
 - Postman definition as a tool.
 - Postman interface
 - API requests methods & Status codes
-- Structure of the API
-- Scripting
-- Some concepts
+- General notes through the course
 
 ---
 ## First: Postman definition as a tool
@@ -38,6 +36,12 @@ That does mean that client send to the server to do(to verb) something (GET data
 Firstly, In this section you need to know the <b>http methods</b> which they are (GET, POST, DELETE, PUT,...)<br/>
 Secondly, you need to know after send to the server, What would the server say to you?<br/>
 would it be Ok, not found or what? how to konw that? by <b>status code</b>
+
+---
+## General notes through the course
+- In the script section you need to know that postman used `javascript syntax`.
+- There's a third party library called chai.js which contains .to  .be  .an   .have
+It is used by postman for writing assesrtions(checks)
 
 ```javascript 
 let test="string";
