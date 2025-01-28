@@ -99,5 +99,7 @@ pm.test("are products inside array? ",()=>{
   response = pm.response.json();
   pm.expect(response).to.be.an("object", "response isn't object"); //if err you will find response isn't object
   pm.expect(response.products).to.be.an("array", "Products aren't inside array"); //if err You will find=> Products aren't inside array
+  pm.expect(response.products[0]).to.have.property("title");
+  pm.expect(response.products[0].price).to.be.a("number", "it's not a number");
 })
 ```
