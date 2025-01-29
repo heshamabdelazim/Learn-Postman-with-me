@@ -46,7 +46,7 @@ would it be Ok, not found or what? how to konw that? by <b>status code</b>
 ---
 ## In the script section (for automation)
 - There are pre-request (before send) and post-request (after send)
-- the best practice of pre-request is to set variables before send or setting variables.
+- the best practice of pre-request is to set variables before send.
 - Postman uses `javascript syntax`.
 - There's a third party library called chai.js which contains easy-readable methods like (.to .be  .an .have)
 It is used by postman for writing assesrtions(checks)
