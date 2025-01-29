@@ -39,7 +39,7 @@ It's important to know that whoever makes requests to the server, We call him a 
 So, In our situation here, Postman is a client to test our server response along with our API.<br/>
 That does mean that client send to the server to do(to verb) something (GET data, POST data, DELETE data, PUT data, ...) <br/>
 
-Firstly, In this section you need to know the <b>http methods</b> which they are (GET, POST, DELETE, PUT,...)<br/>
+That's why <b>http methods</b> are (GET, POST, DELETE, PUT,...)<br/>
 Secondly, you need to know after send to the server, What would the server say to you?<br/>
 would it be Ok, not found or what? how to konw that? by <b>status code</b>
 
