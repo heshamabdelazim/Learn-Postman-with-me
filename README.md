@@ -12,6 +12,8 @@ Visit the link
 - In the script section (for automation)
 - Variables
 - Most of assertions(checks) of an API
+- Schema validation (Not done)
+- Run test automation on CI/CD server (Not done)
 
 ---
 ## First: Postman definition as a tool
