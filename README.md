@@ -42,7 +42,7 @@ Whatever affects its works, Here you need to test the API. ‹br/›
 Yes, You can do it manually by putting the API and click on the send button.
 but believe me, You don't have time for any $${\color{red}continuous \space integration}$$ the developer does. 
  ‹br› 
-The solution for this situation is making Scripts on Postman and whenever there's integration or change, You can run these Scripts to make sure everything is Ok then moving forward to the next level of the API fastly.
+The solution for this situation is `making Scripts` on Postman and whenever there's integration or change, You can run these Scripts to make sure everything is Ok then moving forward to the next level of the API fastly.
 
 ---
 ## APIs to test
