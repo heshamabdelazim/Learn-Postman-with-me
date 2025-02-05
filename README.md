@@ -42,7 +42,7 @@ Whatever affects its works, Here you need to test the API. ‹br/›
 Yes, You can do it manually by putting the API and click on the send button.
 but believe me, You don't have time for any $${\color{red}continuous \space integration}$$ the developer does. 
  ‹br› 
-The solution for this situation is `making Scripts` on Postman and whenever there's integration or change, You can run these Scripts to make sure everything is Ok then moving forward to the next level of the API fastly.
+The solution for this situation is `making Scripts` on Postman and whenever there's integration or change, `You can run these Scripts to make sure everything is Ok` then moving forward to the next level of the API fastly.
 
 ---
 ## APIs to test
@@ -52,10 +52,10 @@ Here we will see what do APIs do and what to test.
    - Is this data structured properly as it's expected and required?
    - Does data types of each key goes as expected.
    - Response or objects must obtain id, Does they obtain?
-   - What about Headers, Authentication and Authorization. 
+   - What about <b>Headers, Authentication and Authorization</b>?
    - Is the response body by JSON format or HTML?
    - Security of the data? Can all people access that sensitive data?
-2. It add my data inside database server
+2. It add my data inside database server, SO:
    - Is status code 201 created?
    - Is the data structured well as expected.
    - Is Data Types as expected?
@@ -65,7 +65,7 @@ Here we will see what do APIs do and what to test.
 
 ## API requests methods
 
-It's important to know that whoever makes requests to the server, We call him a client made a request. <br/>
+It's important to know that whoever makes requests to the server, We call him a client made a request. <br/> 
 So, In our situation here, Postman is a client to test our server response along with our API.<br/>
 That does mean that client send to the server to do(to verb) something (GET data, POST data, DELETE data, PUT data, ...) <br/>
 
