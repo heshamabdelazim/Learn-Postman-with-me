@@ -1,6 +1,6 @@
 # Learn-Postman-with-me.
 This is some main notes while my learning of Postman. <br/>
-`Important notice:` If you want to learn, <br/>
+`Note:` If you want to learn, <br/>
 Visit the link
 <a href="https://www.youtube.com/watch?v=zp5Jh2FIpF0">Course here</a>.
 
@@ -8,7 +8,9 @@ Visit the link
 ## Content of this Repo is the following
 - Postman definition as a tool.
 - Postman interface
-- API requests methods & Status codes
+- APIs in test
+- APIs to test
+- API requests methods
 - In the script section (for automation)
 - Variables
 - Most of assertions(checks) of an API
@@ -31,10 +33,38 @@ Visit the link
 2. Every Workspace has its own collections + Enviornments 
 3. A collection has (folders + requests) + some details like (variables + Auth + ...)
 4. A folder that inside a collection has (sub-folders + requests)
-5. A request contains all of API details that you need to `send` then watch the response and console of the script and most importnat thing is  the code status.
+5. A request contains all of API details that you need to `send` then watch the response and console of the script and the most importnat thing is  the code status.
 
 ---
-## API requests methods & Status codes
+## APIs in test
+in general, We use APIs to fulfill its work accuratly and precisely. ‹br/›
+Whatever affects its works, Here you need to test the API. ‹br/›
+Yes, You can do it manually by putting the API and click on the send button.
+but believe me, You don't have time for any $${\color{red}continuous \space integration}$$ the developer does. 
+ ‹br› 
+The solution for this situation is making Scripts on Postman and whenever there's integration or change, You can run these Scripts to make sure everything is Ok then moving forward to the next level of the API fastly.
+
+---
+## APIs to test
+Here we will see what do APIs do and what to test.
+1. It brings my data from the database server SO:
+   - Is the response status or status code is 200 ok?
+   - Is this data structured properly as it's expected and required?
+   - Does data types of each key goes as expected.
+   - Response or objects must obtain id, Does they obtain?
+   - What about Headers, Authentication and Authorization. 
+   - Is the response body by JSON format or HTML?
+   - Security of the data? Can all people access that sensitive data?
+2. It add my data inside database server
+   - Is status code 201 created?
+   - Is the data structured well as expected.
+   - Is Data Types as expected?
+   - Is that client (who made the request) authenticated or autherized?
+   - Are endpoint and data valid?
+---
+
+## API requests methods
+
 It's important to know that whoever makes requests to the server, We call him a client made a request. <br/>
 So, In our situation here, Postman is a client to test our server response along with our API.<br/>
 That does mean that client send to the server to do(to verb) something (GET data, POST data, DELETE data, PUT data, ...) <br/>
