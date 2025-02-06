@@ -153,3 +153,10 @@ pm.test("In Headers, x-powered-by is Express",()=>{
   pm.expect(pm.response.headers.get(x-powered-by)).to.eql("Express");
 })
 ```
+---
+## Schema Validation
+section is on progress 👷🏾‍♂️⚠️
+
+---
+## Run test automation on CI/CD server
+section is on progress 👷🏾‍♂️⚠️
