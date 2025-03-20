@@ -85,7 +85,13 @@ It is used by postman for writing assesrtions(checks)
 - In Postman and programming world, You tends to save time by making variables that has a common value to use it many times.
 - for instance => `{{baseUrl}}` a variable we use many times in all of requests of the collection.
 - Also, `APIKey` a variable we use many times for auth of the request.
-- To access to collection variables from script section you will write
+### Types of Variables (the following starts from biggest scope to the lowest) $${\color{yellow}starts \space from \space the \space biggest \space scope \space to \space the \space lowest }$$
+ - Global Variables
+ - collection variables
+ - Environment variables
+ - Data variables
+ - Local variable
+To access to collection variables from script section you will write
   ```javascript
   //post-request section
   let myApiKey = pm.collectionVariables.get("apiKey"); //got a collection variable value
