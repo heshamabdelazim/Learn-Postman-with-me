@@ -91,7 +91,8 @@ It is used by postman for writing assesrtions(checks)
  - Environment variables
  - Data variables
  - Local variable
-To access to collection variables from script section you will write
+ 
+ To access to collection variables from script section you will write
   ```javascript
   //post-request section
   let myApiKey = pm.collectionVariables.get("apiKey"); //got a collection variable value
