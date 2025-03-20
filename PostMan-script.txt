@@ -1,0 +1,161 @@
+#There's a third party library called chai.js which contains .to  .be  .an   .have
+It is used by postman for writing assesrtions(checks)
+
+============================
+#variables
+	how to access inside script: 		> pm.collectionVariables.get("apiKey")
+						> pm.collecitonVariables.set("apiKey", "value")
+
+						>console.log(pm.variables.replaceIn(${{randomFullName}}))// output is random name
+	
+	in the collectionVariables you use: 	>{{apiKey}}
+					
+	in json format(body) you use:		> "customerName": "{{$randomFullName}}"
+
+
+============================
+why pre-request important?
+-to set any variable in collectionVariable that will be used later in the post-request
+why are we doing this?		because whenever that random variable is called it will make difference
+and we have 2 calls that will be different
+
+============================
+#Structure of postman api
+
+const myCollection = pm.response.json().collection;
+
+myCollection > info {}
+
+	     > item [] 		> [0] {name:"folder-one", items: [folders], auth: {}, event: [2]}
+		       		> [1] {name:"folder-two", items: [folders], auth:{}, event:[2] }
+
+
+	     > auth {}		>{type: "apiKey", apiKey:[]}
+
+
+	     > event [2]	> [0] {listen:"test", script: []}
+				> [1] {listen:"prerequest", script: []}
+
+	     > variable []
+
+
+============================
+#Notes
+
+console.log(typeof(pm.collectionVariables.productId)); //Careful, The datatype is string 
+//So you should write parseInt(pm.collectionVariables.productId)
+
+============================
+# Methods(Assertions) in Postman but inside pm.test("test something",()={})
+
+pm.response.to.have.status(200);
+
+pm.response.to.be.json;
+
+pm.expect(response.id).to.match(/^2[A-Z0-9]{8}$/);   //note you don't need to make any string
+
+pm.expect(variable).equals(); //strict equal
+
+pm.expect(variable).contains("console.log"); 
+
+pm.expect(variable).includes("console.log"); 
+
+pm.expect(variable).to.be.an("array", "it's not array")
+
+pm.expect(variable.isAvailable).to.be.true
+
+pm.expect(variable.isAvailable).to.eql(true)
+
+pm.expect(variable.id).to.eql(parseInt(pm.collectionVariables.myProductId))
+
+pm.expect(variableObject).to.have.property("name")
+
+pm.expect(variable.name).to.be.a("string")
+
+pm.expect(variable.price).to.be.greaterThan(0)
+
+pm.expect(pm.response.headers.get(x-powered-by)).to.eql("Express");
+
+============================
+#jsonSchema structure is like : {
+					type:"object",
+					properties:{},
+					required:["id",...]
+				}
+
+
+pm.test("check json schema",()=>{
+	const myBigSchema={
+		type:"object",
+		properties:{
+			id:{
+				type:"string",
+				pattern: "^2[A-Z0-9]{8}$"
+			},
+			ClientID:{
+				type:"string"
+			},
+			created:{
+                		type:"string",
+                		format:"date-time"
+            		},
+			products:{
+	             		type:"array", //suppose I have array of objects. So every object must has properties like id , name , price
+        	       		items:{
+                	    		//every object contains
+                    			type:"object",
+                    			properties:{
+                        			id:{
+                            				type:"number"
+                        			},
+                        			quantity:{
+                            				type:"number"
+                        			}
+                    			}
+                		}
+            }
+		},
+		required:["id", "beso"] //beso property must exist but err test
+	}
+
+	pm.response.to.have.jsonSchema(myBigSchema)
+
+})
+============================
+#Mock server to test my Test
+
+1-at the request, Press on (save as example) // this will make a file below the request
+2-(at the left) go to Mock servers button  then create a new mock server and give it a name
+3-(at the left) go to Environments and change the variable to baseUrl
+4-(at the top right) switch the environment of that mocking server
+
+congrates you did mocking server to test your test so you can change properties and verify the schema
+
+============================
+#Postman CLI
+
+	Why run postman tests on CLI ?
+		-It's invaluable for streamlining the testing process as it allows for automation
+		-Easy integration with continuous integration and continuous deployment pipelines
+		-A faster execution
+		-We can also run a postman collection on our own infrastructure without using the postman cloud
+		-if we want to run Postman tests in a CI CD server like Jenkins, GitHub actions or Gitlab
+
+	
+	the academic why CLI?
+		-Automation of the software release process.
+		-Lower testing costs because of multiple tests being run in seconds.
+		-Bug issues are quickly identified and resolved.
+		-The release time of the software is faster to reach the market through continuous testing and development.
+		-In cloud environments, Continuous Delivery allows teams to manage cloud resources effectively.
+		-Improved accessibility and communication in teams.
+
+
+	Commands
+		-postman login => Go back to postman interface and inside run collection, Click on the button generate api key and copy it 		 write in CLI postman login PMAK-blabla.
+
+		-To run all folders of the collection
+		 write in CLI postman collection run 454354324..more
+
+		-To run specific folder of the collection
+		 write on CLI postman collection run 234324.. -i "product" -i "status" -i "orders"
