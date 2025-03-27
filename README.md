@@ -6,16 +6,25 @@ Visit the link
 
 ---
 ## Content of this Repo is the following
-- Postman definition as a tool.
-- Postman interface
-- APIs in test
-- APIs to test
-- API requests methods
-- In the script section (for automation)
-- Variables
-- Most of assertions(checks) of an API
-- Schema validation (Not done)
-- Run test automation on CI/CD server (Not done)
+![orange](https://placehold.co/15x15/orange/orange.png) Postman definition as a tool.
+
+![orange](https://placehold.co/15x15/orange/orange.png) Postman interface
+
+![orange](https://placehold.co/15x15/orange/orange.png) APIs in test
+
+![orange](https://placehold.co/15x15/orange/orange.png) APIs to test
+
+![orange](https://placehold.co/15x15/orange/orange.png) API requests methods
+
+![orange](https://placehold.co/15x15/orange/orange.png) In the script section (for automation)
+
+![orange](https://placehold.co/15x15/orange/orange.png) Variables
+
+![orange](https://placehold.co/15x15/orange/orange.png) Most of assertions(checks) of an API
+
+![orange](https://placehold.co/15x15/orange/orange.png) Schema validation (Not done)
+
+![orange](https://placehold.co/15x15/orange/orange.png) Run test automation on CI/CD server (Not done)
 
 ---
 ## First: Postman definition as a tool
